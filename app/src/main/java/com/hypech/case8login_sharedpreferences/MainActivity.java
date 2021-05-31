@@ -19,6 +19,7 @@ package com.hypech.case8login_sharedpreferences;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mDBOpenHelper = new DBOpenHelper(this);
+
+        SharedPreferences sp = getSharedPreferences("rememberLogin", MODE_PRIVATE);
+
+        if(sp.getBoolean("rememberLogin",false)){
+            Intent intent = new Intent(this, BusinessLogic.class);//Jump to Register Activity
+            startActivity(intent);
+        }
+
     }
 
     public void clickRegister(View view){

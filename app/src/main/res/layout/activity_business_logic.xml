@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="After login, we start doing business."
+        android:text="We are here, either from Login Page, or due to saved Login Information in Shared Preferences."
         tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="157dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Case8Login_SharedPreferences</string>
+    <string name="app_name">Case10_SharedPreferences_Login</string>
     <string name="logint">Login</string>
     <string name="etUser_hint">Phone/Email</string>
     <string name="pswHint">Password</string>

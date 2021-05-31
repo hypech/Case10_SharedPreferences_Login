@@ -49,11 +49,6 @@ public class Login extends AppCompatActivity {
 
         sp     = getSharedPreferences("rememberLogin", MODE_PRIVATE);
         editor = sp.edit();
-
-        if(sp.getBoolean("rememberLogin",false)){
-            Intent intent = new Intent(this, BusinessLogic.class);//Jump to Register Activity
-            startActivity(intent);
-        }
     }
 
     public void clickLogin(View view) {
